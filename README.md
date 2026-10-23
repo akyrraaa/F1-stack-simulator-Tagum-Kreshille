@@ -1,6 +1,18 @@
+# F1 Stack Simulator
+
+**Name:** Kreshille G. Tagum
+**Section:** WMT IV-2
+
+**Original starter repository:** https://github.com/Jackson-Soriano/f1-elec4-stack-simulator-starter.git
+
+## Activity Description
+Pre-Demo Reading Activity for ELEC 4: Python and Flask Stack Simulator. This repository contains the starter template showing how Python and Flask connect to an HTML interface supported by CSS, Bootstrap, JavaScript, and jQuery. The TODOs will be completed during the demonstration.
+
+---
+
 # Flask Stack Simulator startup template
 
-This is the unfinished repository for a pre-demo reading activity. Read `Flask_PreDemo_Reading_Activity.pdf` first. 
+This is the unfinished repository for a pre-demo reading activity. Read `Flask_PreDemo_Reading_Activity.pdf` first.
 
 ## Before the demonstration
 
@@ -22,6 +34,4 @@ This is the unfinished repository for a pre-demo reading activity. Read `Flask_P
 - static/js/ui.js: optional focus enhancement and a later effect TODO.
 - requirements.txt: Flask dependency only.
 
-During the demo, the instructor will convert static paths into url_for calls, connect form submission, introduce Jinja variables and loops, and connect Python stack operations. The three HTML files are intentionally independent before that conversion.
-
-
+During the demo, the instructor will convert static paths into url_for calls, connect form submission, introduce Jinja variables and loops, and connect the Stack class to the routes. The three HTML files are intentionally independent before that conversion.
