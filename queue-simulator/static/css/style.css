@@ -1,0 +1,17 @@
+/* Colors retain the character of the supplied classroom interface. */
+body { background: #495579; color: #fff; font: 1rem/1.5 system-ui, sans-serif; margin: 0; }
+.container { max-width: 1050px; margin: auto; padding: 24px; }
+a { color: #ffe797; }
+h1 { font-size: 2rem; } h2 { font-size: 1.2rem; }
+.simulator { display: flex; flex-wrap: wrap; }
+.simulator section { flex: 1; min-width: 220px; padding: 18px; }
+.operations { background: #687b8d; } .stack-area { background: #20252c; }
+.popped-area { background: #852044; }
+.stack-item { background: #1855bd; border-radius: 5px; margin: 10px auto; padding: 12px; text-align: center; overflow-wrap: anywhere; }
+.stack-item small { display: block; } .removed { background: #a21638; }
+.peek { background: gold; color: #111; }
+.notice { padding: 12px; background: #e5fff0; color: #143724; }
+.error { color: #fff0a3; } .notice.error { color: #730e1b; background: #ffe4e8; }
+input, textarea { box-sizing: border-box; display: block; width: 100%; padding: 8px; }
+button, input[type=submit] { cursor: pointer; padding: 8px 12px; margin: 4px; }
+label { display: block; margin-top: 8px; }

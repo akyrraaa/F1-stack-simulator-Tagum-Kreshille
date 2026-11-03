@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Queue Simulator{% endblock %}
+{% block content %}
+<h1>Queue Data Structure Simulator</h1>
+<p>Queue size: <strong>{{ size }}</strong></p>
+<div class="row simulator">
+  <section class="col-md-4 operations">
+    <h2>Operations</h2>
+    <form action="{{ url_for('operate') }}" method="POST">
+      <label for="st_data">Data (1 to 24 characters)</label>
+      <input id="st_data" name="value" maxlength="24" class="form-control mb-2" autocomplete="off">
+      <div class="d-grid gap-2">
+        <button type="submit" id="btn_enqueue" name="action" value="enqueue" class="btn btn-success">Enqueue</button>
+        <button type="submit" id="btn_dequeue" name="action" value="dequeue" class="btn btn-danger">Dequeue</button>
+        <button type="submit" id="btn_peek" name="action" value="peek" class="btn btn-warning">Peek</button>
+        <button type="submit" id="btn_clear" name="action" value="clear" class="btn btn-light">Clear</button>
+      </div>
+    </form>
+  </section>
+  <section id="queue" class="col-md-4 stack-area">
+    <h2>Queue data</h2>
+    {% for item in items %}
+    <div class="stack-item{% if loop.first and highlight %} peek{% endif %}">{{ item }}{% if loop.first and loop.last %}<small>FRONT / REAR</small>{% elif loop.first %}<small>FRONT</small>{% elif loop.last %}<small>REAR</small>{% endif %}</div>
+    {% else %}
+    <p>Queue is empty.</p>
+    {% endfor %}
+  </section>
+  <section id="removed" class="col-md-4 popped-area">
+    <h2>Removed from queue</h2>
+    {% for item in removed %}
+    <div class="stack-item removed">{{ item }}</div>
+    {% else %}
+    <p>No removed items.</p>
+    {% endfor %}
+  </section>
+</div>
+{% endblock %}
